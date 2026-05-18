@@ -1,4 +1,4 @@
-const { InteractionType, ModalBuilder, TextInputBuilder, TextInputStyle, ActionRowBuilder } = require('discord.js');
+const { InteractionType } = require('discord.js');
 const config = require('../config.json');
 
 module.exports = {
@@ -77,30 +77,21 @@ module.exports = {
 };
 
 async function handleTicketButton(interaction, client, args) {
-  const action = args[0];
-  const ticketId = args.slice(1).join('_');
-
-  // Add later in ticket.js
-  await interaction.reply({ content: 'Ticket action placeholder', ephemeral: true });
+  // Placeholder for ticket button handling
 }
 
 async function handleApplicationButton(interaction, client, args) {
-  const action = args[0];
-  // Add later in application.js
-  await interaction.reply({ content: 'Application action placeholder', ephemeral: true });
+  // Placeholder for application button handling
 }
 
 async function handleTicketTypeSelect(interaction, client, type) {
-  // Add later in ticket panel
-  await interaction.reply({ content: `Creating ticket of type: ${type}`, ephemeral: true });
+  // Placeholder for ticket type select
 }
 
 async function handleHelpSelect(interaction, client, category) {
-  // Add later in help command
-  await interaction.reply({ content: `Help category: ${category}`, ephemeral: true });
+  // Placeholder for help select
 }
 
 async function handleApplicationModal(interaction, client) {
-  // Add later in application setup
-  await interaction.reply({ content: 'Application received!', ephemeral: true });
+  // Placeholder for application modal
 }
